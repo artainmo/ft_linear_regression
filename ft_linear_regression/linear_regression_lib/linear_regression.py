@@ -140,12 +140,7 @@ class linear_regression:
 #It also shows the associated cost as a title
 #To detect underfitting plot the training data, and to detect overfitting plot the test data
     def plot_(self, x_values, predicted_values, expected_values, cost):
-        print("hello")
         mpl.plot(x_values, predicted_values, color="orange")
-        print("1")
         mpl.plot(x_values, expected_values, linestyle="",marker="o", color="blue")
-        print(2)
         mpl.title("Cost: " + str(cost))
-        print(3)
-        mpl.show()
-        print(4)
+        mpl.show() #SEGFAULT on new mac update "Big Sur", use VM
