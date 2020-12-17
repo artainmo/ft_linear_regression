@@ -1,5 +1,7 @@
 import numpy as np
+import matplotlib
 import matplotlib.pyplot as mpl
+matplotlib.use('TkAgg') #Make matplotlib compatible with Big Sur on mac
 import copy
 
 #This function normalizes data, this means it scales the data to have a value between 0 and 1
