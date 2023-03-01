@@ -4,4 +4,4 @@
 
 An introduction to machine learning. Write own gradient descent algorithm to train a linear-regression model that will be used to predict the price of a car.
 
-To learn more about the theory behind this project, read the comments inside the code.
+To learn more about the theory behind this project, read the comments inside the code
