@@ -56,7 +56,7 @@ def regularized_linear_gradient(expected_values, x_values, theta, lambda_):
     res = np.add(res, np.multiply(lambda_, theta_0(copy.deepcopy(theta))))
     return np.divide(res, lenght)
 
-#Function used to perform regularization, theta0 as a bias and not a weight should not by implicated by regularization and thus is put to zero for matrix operation
+#Function used to perform regularization, theta0 as a bias and not a weight should not be implicated by regularization and thus is put to zero for matrix operation
 #l2 is the most common regularization technque, dot product of theta without theta0 is returned and used by cost function to minimize the theta values
 #l2 regularization is used by cost function to limit overfitting, by removing the bias/theta0/y-intercept
 def l2_regularization(theta):
