@@ -122,8 +122,8 @@ class linear_regression:
 
 #The cost function is there to find the error rate or loss, a lower cost is better
 #An extremely low cost on the training set, will maybe equal a higher cost on the test set, this is overfitting
-#Overfitting means the thetas are too well adapted/specialized to the training data, while it should be adapted to all data
-#A high cost on training set means underfitting, which means the theta values are adapted to no data at all.
+#Overfitting means the thetas are too well adapted to the training data, while it should be adapted to all data by generalizing
+#A high cost on training set means underfitting, which means the theta values are adapted to no data at all
     def cost_(self, predicted_values, expected_values):
         res = np.subtract(predicted_values, expected_values)
         res = res.transpose().dot(res)
